@@ -12,10 +12,9 @@
 Обеспечение терминации HTTPS
 Обоснуйте свой выбор.
 
-| Критерий   | Centralized, Edge Gateway | Two-Tier Gateway | Microgateway | Per-Pod Gateways | Sidecar Gateways and Service Mesh |
-|:----------:|:-------------------------:|:-------:||:-------:|:-------:|
-
-|SSL/TLS                        | + | +| + | + | + |
+ Критерий | Centralized, Edge Gateway | Two-Tier Gateway | Microgateway | Per-Pod Gateways | Sidecar Gateways and Service Mesh 
+ :----:| :----: | :----: |:----:|:----:|:----:
+|SSL/TLS                        | + | +| + | + | + | 
 |Аутентификация                 | + | +| + | + | + |
 |Авторизация                    | + | +|   |   | + |
 |Маршрутизация запросов         | + | +| + | + |   |
