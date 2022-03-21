@@ -3,6 +3,8 @@
 
 ## Модуль 12. Администрирование кластера Kubernetes
 
+[12.2 Команды для работы с Kubernetes](./12-kubernetes-02-commands/README.md)
+
 [12.1. Компоненты Kubernetes](./12-kubernetes-01-intro/README.md)
 
 ## Модуль 11. Микросервисная архитектура
