@@ -239,7 +239,7 @@
 
 Увеличиваем количество реплик
 
-    root@vagrant:/home/vagrant/gitwork/devkub-homeworks-my/12-kubernetes-02-commands# kubectl scale deployment/hello-node --replicas=5
+    root@vagrant:/home/vagrant/gitwork/devkub-homeworks-my/12-kubernetes-02-commands# kubectl scale deployment/hello-deployment --replicas=5
 
 Смотрим статус
 
