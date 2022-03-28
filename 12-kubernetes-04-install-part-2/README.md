@@ -53,8 +53,3 @@
     NAME                     READY   STATUS    RESTARTS   AGE   IP            NODE    NOMINATED NODE   READINESS GATES
     nginx-7c658794b9-hlpbt   1/1     Running   0          88s   10.233.96.1   node2   <none>           <none>
     nginx-7c658794b9-jxbp4   1/1     Running   0          88s   10.233.90.2   node1   <none>           <none>
-
-    root@cp1:/home/yc-user# kubectl get po -o wide
-    NAME                     READY   STATUS    RESTARTS   AGE     IP            NODE    NOMINATED NODE   READINESS GATES
-    nginx-7c658794b9-hlpbt   1/1     Running   0          4m36s   10.233.96.1   node2   <none>           <none>
-    nginx-7c658794b9-jxbp4   1/1     Running   0          4m36s   10.233.90.2   node1   <none>           <none>
