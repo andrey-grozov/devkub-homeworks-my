@@ -1,0 +1,28 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: hello-world
+  namespace: default
+spec:
+  podSelector:
+    matchLabels:
+      app: hello-world
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              app: hello1
+      ports:
+        - protocol: TCP
+          port: 80
+        - protocol: TCP
+          port: 443
+    - from:
+        - podSelector:
+            matchLabels:
+              app: hello2
+      ports:
+        - protocol: TCP
+          port: 443
