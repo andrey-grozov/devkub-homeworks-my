@@ -1,0 +1,39 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front-back
+  namespace: test
+  labels:
+    app: front-back
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: front-back
+  template:
+    metadata:
+      labels:
+        app: front-back
+    spec:
+      terminationGracePeriodSeconds: 10
+      initContainers:
+        - name: "init-sleep"
+          image: "busybox:latest"
+          imagePullPolicy: "IfNotPresent"
+          command: ['sleep', '5']
+      containers:
+        - name: back
+          image: mrgrav/some-test-backend:latest
+          ports:
+            - containerPort: 9000
+          env:
+            - name: DATABASE_URL
+              value: postgres://postgres:postgres@postgres:5432/news
+        - name: front
+          image: mrgrav/some-test-frontend:latest
+          ports:
+            - containerPort: 80
+          env:
+            - name: BASE_URL
+              value: http://localhost:9000
