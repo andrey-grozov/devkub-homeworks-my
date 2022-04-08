@@ -1,5 +1,8 @@
 # Домашние задания по курсу «Администрирование и конфигурация Kubernetes»
 
+## Модуль 13. Конфигурация Kubernetes
+
+[13.1 контейнеры, поды, deployment, statefulset, services, endpoints](./13-kubernetes-config-01-objects/README.md)
 
 ## Модуль 12. Администрирование кластера Kubernetes
 
